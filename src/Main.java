@@ -1,5 +1,11 @@
+import javax.swing.*;
+
+import static gui.Hauptmenue.*;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
+        SwingUtilities.invokeLater(() -> {
+            JFrame frame = createMainFrame();
+            createAndShowMenu(frame);
+        });    }
 }
